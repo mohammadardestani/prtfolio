@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'blog.apps.BlogConfig',
     'jobs.apps.JobsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -74,7 +75,7 @@ WSGI_APPLICATION = 'portfilio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
+DATABASES = { 
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME':'portfiliodatabs',
