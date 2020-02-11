@@ -132,4 +132,4 @@ STATIC_URL = '/static/'
 
 MEDAI_ROOT =  os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-#hmmmmm
+#hmmmmm is it true?
