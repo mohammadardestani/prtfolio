@@ -65,12 +65,15 @@
 <h2>latest posts</h2>
 <hr/> 
 {% for blog in blogs.all %}
-<a href=""><h3>{{blog.title}}</h3></a>
+<a href="{% url 'blog_detail'  blog.id %} "><h3>{{blog.title}}</h3></a>
 {{blog.pup_date}}
 </br>
 <image class="img-fluid"  src="{{blog.image.url}}" width="250" height="250"/>
 </br>
-<p>{{blog.summary}}</p>
+{{blog.summary}}
+<br/>
+<br/>
+<hr/>
 {% endfor %}
 </div>
 </main>

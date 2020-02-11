@@ -1,4 +1,5 @@
 <!doctype html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -51,7 +52,7 @@
     <div class="navbar-nav ml-auto">
       <a class="nav-item nav-link " href="#">blog</a>
       <a class="nav-item nav-link" href="#">instagram</a>
-      <a class="nav-item nav-link" href="#">resume </a>
+      <a class="nav-item nav-link" href="{% static 'resume-samples.pdf' %}">resume </a>
      
     </div>
   </div>
@@ -63,6 +64,7 @@
     <div class="container">
       <h1>hi im mohammad javad </h1>
       <p class="lead text-muted">sipmle example of a django projet!</p>
+      <image src='{% static 'photo_2019-09-27_16-24-25.jpg' %}' height=300 />
       <p>
        
         <a href="mailto:mjavad.ardestani00@gmail.com" class="btn btn-secondary my-2">send me mail</a>
