@@ -7,13 +7,12 @@
 *.pyc
 __pycache__/
 local_settings.py
-settings.py
-settings.py
 db.sqlite3
 db.sqlite3-journal
 /media
 /static
 /env
+env/
 env
 .vs code
 /migrations
